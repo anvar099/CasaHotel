@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body .main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeecec;
+}
+body .main-container .list {
+  list-style: none;
+}
+body .main-container .item-link {
+  text-decoration: none;
+}
+body .main-container .home-header {
+  background-image: url(../assets/image/background-image1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+body .home-header .home-title {
+  color: white;
+  font-size: 70px;
+  font-family: "Times New Roman";
+  text-align: center;
+  margin-top: 20vh;
+  font-weight: bolder;
+}
+body .home-header .home-btn {
+  margin-left: 650px;
+  margin-top: 230px;
+}
+body .home-header .home-btn .home-scroll-btn {
+  border-radius: 20px;
+  height: 50px;
+  width: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+}
+body .home-header .home-btn .home-scroll-btn .point {
+  padding-top: 3px;
+  color: white;
+  height: 80px;
+  font-weight: bold;
+}
+body .form-title {
+  font-size: 50px;
+  font-family: "Times New Roman";
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+body .booking-form {
+  border: 2px solid red;
+  height: 120px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+body .booking-form .booking-label {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+body .booking-form .booking-input {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+body .welcome-content {
+  width: 100vw;
+  height: 100vh;
+  background-color: honeydew;
+}
+body .welcome-box {
+  width: 35vw;
+  height: fit-content;
+}
+body .welcome-box .welcome-to-casahotel {
+  font-size: 50px;
+  font-family: "Times New Roman";
+  margin-top: 60px;
+  margin-left: 60px;
+  line-height: 4rem;
+}
+body .welcome-box .welcome-paragraph {
+  margin-left: 60px;
+  margin-top: 25px;
+  color: #555555;
+}
+body .welcome-box .welcome-paragraph-2 {
+  margin-left: 60px;
+  margin-top: 25px;
+  color: #807e7e;
+}
+body .welcome-box .btn-box {
+  display: flex;
+  flex-direction: row;
+}
+body .welcome-box .btn-box .welcome-btn {
+  border-radius: 25px;
+  background-color: #ee7d3b;
+  height: 50px;
+  width: 160px;
+  margin-left: 60px;
+  margin-top: 25px;
+  border: none;
+  color: white;
+}
+body .welcome-box .btn-box .or {
+  margin-top: 40px;
+  margin-left: 25px;
+  color: #807e7e;
+}
+body .welcome-box .btn-box .see-video {
+  margin-left: 25px;
+  margin-top: 40px;
+  color: #ee7d3b;
+}
+body .welcome-box .btn-box .welcome-image-box {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid black;
+}
+body .welcome-box .btn-box .welcome-image-box .welcome-img-3 {
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */

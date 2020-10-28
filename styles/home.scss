@@ -1,0 +1,155 @@
+// variables //
+$btn-color: purple;
+$title-color: white;
+$title-font-size: 70px;
+$mini-title-font-size: 50px;
+$title-font-family: 'Times New Roman';  
+$paragraph-font-color: rgb(128, 126, 126);
+$paragraph-font-color-2:  rgb(85, 85, 85);
+$btn-color: rgb(238, 125, 59);
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 236, 236);
+    .list{
+      list-style: none;
+    }
+    .item-link{
+      text-decoration: none;
+    }
+    .home-header {
+      background-image: url(../assets/image/background-image1.jpg);
+      width: 100vw;
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+  }
+  .home-header{
+    .home-title{
+      color: $title-color;
+      font-size: $title-font-size;
+      font-family: 'Times New Roman';
+      text-align: center;
+      margin-top: 20vh;
+      font-weight: bolder;
+    }
+    .home-btn{
+      margin-left: 650px;
+      margin-top: 230px;
+    
+      .home-scroll-btn{
+        border-radius: 20px;
+        height: 50px;
+        width: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        .point{
+          padding-top: 3px;
+          color: white;
+          height: 80px;
+          font-weight: bold;
+         
+        }
+      }
+    }
+  }
+  .form-title{
+    font-size: $mini-title-font-size;
+    font-family: $title-font-family;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .booking-form{
+    border: 2px solid red;
+    height: 120px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    .booking-label{
+      margin-top: 15px;
+      margin-left: 20px;
+      
+    }
+    .booking-input{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+
+    }
+  }
+  .welcome-content{
+    width: 100vw;
+    height: 100vh;
+    background-color: honeydew;
+  }
+  .welcome-box{
+    width: 35vw;
+    height: fit-content;
+    .welcome-to-casahotel{
+      font-size: $mini-title-font-size;
+      font-family: $title-font-family;
+      margin-top: 60px;
+      margin-left: 60px;
+      line-height: 4rem;
+    }
+    .welcome-paragraph{
+      margin-left: 60px;
+      margin-top: 25px;
+      color: $paragraph-font-color-2
+    }
+    .welcome-paragraph-2{
+      margin-left: 60px;
+      margin-top: 25px;
+      color: $paragraph-font-color;
+    }
+    .btn-box{
+      display: flex;
+      flex-direction: row;
+      .welcome-btn{
+        border-radius: 25px;
+        background-color: $btn-color;
+        height: 50px;
+        width: 160px;
+        margin-left: 60px;
+        margin-top: 25px;
+        border: none;
+        color: white;
+      }
+      .or{
+        margin-top: 40px;
+        margin-left: 25px;
+        color: $paragraph-font-color;
+      }
+      .see-video{
+        margin-left: 25px;
+        margin-top: 40px;
+        color: $btn-color;
+      }
+      .welcome-image-box{
+         
+        .welcome-img-3{
+          border: 2px solid red;
+          border-radius: 50%;
+          
+        }
+      }
+     
+    }
+    
+   
+  }
+  
+}
+  
