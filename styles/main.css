@@ -29,7 +29,7 @@ body {
 
 .home-title {
   color: white;
-  font-size: 70px;
+  font-size: 90px;
   font-family: "Times New Roman";
   text-align: center;
   margin-top: 20vh;
@@ -61,7 +61,7 @@ body {
 }
 
 .form-title {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Times New Roman";
   text-align: center;
   margin-top: 60px;
@@ -148,7 +148,7 @@ body {
 }
 
 .welcome-to-casahotel {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Times New Roman";
   margin-top: 60px;
   margin-left: 60px;
@@ -246,7 +246,7 @@ body {
 }
 
 .offer-title {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Times New Roman";
   text-align: center;
   margin-top: 60px;
@@ -362,7 +362,7 @@ body {
 }
 
 .gallery-title {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Times New Roman";
   text-align: center;
   margin-top: 60px;
@@ -401,21 +401,30 @@ body {
   text-decoration: none;
 }
 
+.testimonial {
+  background-color: #e9dae9;
+}
+
 .testimonial-title {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Times New Roman";
   text-align: center;
+  margin-bottom: 80px;
 }
 
-.kkkk {
+.testimonial-comments {
   display: flex;
   flex-direction: row;
+  width: 90vw;
 }
 
-.bbb {
+.testimonial-img-p {
+  width: 450px;
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  text-align: center;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .testimonial-image-carousel {
@@ -426,6 +435,185 @@ body {
   -o-border-radius: 100px;
   width: 100px;
   height: 100px;
+}
+
+.testimonial-paragraph {
+  line-height: 1.8rem;
+  color: black;
+}
+
+.testimonial-nick {
+  color: #555555;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+.event-title {
+  font-size: 70px;
+  font-family: "Times New Roman";
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.event-paragraph {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #807e7e;
+}
+
+.event-content {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: fit-content;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-img-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 380px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+  margin-bottom: 170px;
+}
+
+.image-events {
+  width: 380px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.event-date {
+  color: #555555;
+  margin-top: 30px;
+  margin-left: 25px;
+  letter-spacing: 2px;
+}
+
+.event-paragraph-box {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: Gill Sans;
+  font-size: 30px;
+  font-weight: 540;
+}
+
+.reserve-content {
+  background-color: #c7c3c3;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.reserve-paragraph {
+  font-family: Gill Sans;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.reserve-btn {
+  border-radius: 25px;
+  background-color: #ee7d3b;
+  height: 50px;
+  width: 180px;
+  border: none;
+  color: white;
+  margin-top: 120px;
+  margin-left: 440px;
+}
+
+.footer {
+  background-color: #222422;
+  height: fit-content;
+  width: 100vw;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.footer-ul-1 {
+  line-height: 3rem;
+}
+
+.footer-ul-2 {
+  line-height: 3rem;
+  margin-left: 140px;
+}
+
+.footer-li {
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #b3b9b3;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+  line-height: 2.1rem;
+}
+
+.contact-name {
+  color: white;
+}
+
+.address {
+  width: 18px;
+  margin-right: 12px;
+  color: #7e7d7b;
+}
+
+.link {
+  color: #666563;
+}
+
+.footer-paragraph {
+  color: #7e7d7c;
+  margin-bottom: 40px;
+}
+
+.footer-input {
+  margin-left: 100px;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  width: 270px;
+  background-color: #222422;
+  color: white;
+  height: 60px;
+}
+
+::-webkit-input-placeholder {
+  color: #575553;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 17px;
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
