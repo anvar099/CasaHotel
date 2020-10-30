@@ -13,143 +13,385 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(238, 236, 236);
-    .list{
-      list-style: none;
-    }
-    .item-link{
-      text-decoration: none;
-    }
-    .home-header {
-      background-image: url(../assets/image/background-image1.jpg);
-      width: 100vw;
-      height: 100vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
-    }
-  }
-  .home-header{
-    .home-title{
-      color: $title-color;
-      font-size: $title-font-size;
-      font-family: 'Times New Roman';
-      text-align: center;
-      margin-top: 20vh;
-      font-weight: bolder;
-    }
-    .home-btn{
-      margin-left: 650px;
-      margin-top: 230px;
-    
-      .home-scroll-btn{
-        border-radius: 20px;
-        height: 50px;
-        width: 30px;
-        background-color: transparent;
-        border: 2px solid white;
-        outline: none;
-        .point{
-          padding-top: 3px;
-          color: white;
-          height: 80px;
-          font-weight: bold;
-         
-        }
-      }
-    }
-  }
-  .form-title{
-    font-size: $mini-title-font-size;
-    font-family: $title-font-family;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-  .booking-form{
-    border: 2px solid red;
-    height: 120px;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: row;
-    .booking-label{
-      margin-top: 15px;
-      margin-left: 20px;
-      
-    }
-    .booking-input{
-      margin-top: 40px;
-      margin-bottom: 20px;
-      margin-left: 20px;
-
-    }
-  }
-  .welcome-content{
-    width: 100vw;
-    height: 100vh;
-    background-color: honeydew;
-  }
-  .welcome-box{
-    width: 35vw;
-    height: fit-content;
-    .welcome-to-casahotel{
-      font-size: $mini-title-font-size;
-      font-family: $title-font-family;
-      margin-top: 60px;
-      margin-left: 60px;
-      line-height: 4rem;
-    }
-    .welcome-paragraph{
-      margin-left: 60px;
-      margin-top: 25px;
-      color: $paragraph-font-color-2
-    }
-    .welcome-paragraph-2{
-      margin-left: 60px;
-      margin-top: 25px;
-      color: $paragraph-font-color;
-    }
-    .btn-box{
-      display: flex;
-      flex-direction: row;
-      .welcome-btn{
-        border-radius: 25px;
-        background-color: $btn-color;
-        height: 50px;
-        width: 160px;
-        margin-left: 60px;
-        margin-top: 25px;
-        border: none;
-        color: white;
-      }
-      .or{
-        margin-top: 40px;
-        margin-left: 25px;
-        color: $paragraph-font-color;
-      }
-      .see-video{
-        margin-left: 25px;
-        margin-top: 40px;
-        color: $btn-color;
-      }
-      .welcome-image-box{
-         
-        .welcome-img-3{
-          border: 2px solid red;
-          border-radius: 50%;
-          
-        }
-      }
-     
-    }
-    
-   
-  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 236, 236); 
+}
+.list{
+  list-style: none;
+} 
+.item-link{
+  text-decoration: none;
+}    
+.home-header {
+  background-image: url(../assets/image/background-image1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}   
+.home-title{
+  color: $title-color;
+  font-size: $title-font-size;
+  font-family: 'Times New Roman';
+  text-align: center;
+  margin-top: 20vh;
+  font-weight: bolder;
+}      
+.home-btn{
+  margin-left: 650px;
+  margin-top: 210px;
   
 }
+.home-scroll-btn{
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 50px;
+  width: 30px;
+  background-color: transparent;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+} 
+.point{
+  padding-top: 3px;
+  color: white;
+  height: 80px;
+  font-weight: bold;
+}  
+.form-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}   
+.booking-form{
+  background-color: white;
+  height: 150px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
+} 
+.booking-form-box{
+  display: flex;
+  flex-direction: column;
+}
+.booking-label{
+  margin-top: 30px;
+  margin-left: 30px;
+  color: black;
+  font-weight: 500;
+}       
+.booking-input{
+  margin-left: 30px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}   
+.booking-input-number{
+  margin-left: 30px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 140px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.booking-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 260px;
+  margin-top: 60px;
+  margin-left: 30px;
+  border: none;
+  color: white;
+  margin-bottom: 60px;
+}
+.welcome-content{
+  width: 100vw;
+  height: 100vh;
+  background-color: honeydew;
+  display: flex;
+  flex-direction: row;
+} 
+.welcome-box{
+  width: 35vw;
+  height: fit-content;
+}  
+.welcome-to-casahotel{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  margin-top: 60px;
+  margin-left: 60px;
+  line-height: 4rem;
+}   
+.welcome-paragraph{
+  margin-left: 60px;
+  margin-top: 25px;
+  color: $paragraph-font-color-2
+}   
+.welcome-paragraph-2{
+  margin-left: 60px;
+  margin-top: 25px;
+  color: $paragraph-font-color;
+}  
+.btn-box{
+  display: flex;
+  flex-direction: row; 
+}
+.welcome-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 160px;
+  margin-left: 60px;
+  margin-top: 25px;
+  border: none;
+  color: white;
+}  
+.or{
+  margin-top: 40px;
+  margin-left: 25px;
+  color: $paragraph-font-color;
+}   
+.see-video{
+  margin-left: 25px;
+  margin-top: 40px;
+  color: $btn-color;
+  text-decoration: none;
+}  
+.image-wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
   
+  margin-left: 130px;
+  margin-top: 30px;
+
+}
+
+.welcome-img-1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  object-fit: cover;
+  margin-top: 60px;
+  margin-right: 30px;
+}
+.welcome-img-2{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+.welcome-img-3{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+  object-fit: cover;
+  margin-top: 280px;
+
+}
+.offers{
+  width: 100vw;
+  height: fit-content;
+  background-color: rgb(217, 219, 217);
+  display: flex;
+  flex-direction: column;
+}
+.offer-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.offer-paragraph{
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  color: $paragraph-font-color-2
+}
+.offer-main{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cornsilk;
+  
+}
+.offer-img-1{
+  width: 45vw;
+  height: 630px;
+  object-fit: cover;
+
+}
+.offer-image{
+  height: fit-content;
+}
+.offer-price{
+  width: 37vw;
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+.price-time{
+  display: flex;
+  flex-direction: row;
+}
+.price{
+  color: $btn-color;
+  font-size: 50px;
+  margin-top: 60px;
+}
+.time{
+  margin-left: 5px;
+  margin-top: 100px;
+  color: $paragraph-font-color;
+}
+.price-title{
+  font-family: $title-font-family;
+  font-size: 35px;
+}
+.price-paragraph{
+  color: $paragraph-font-color-2;
+  line-height: 2rem;
+  font-size: 16px;
+
+}
+.price-paragraph-2{
+  color: $paragraph-font-color;
+  line-height: 1.7rem;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.offer-booking-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 160px;
+  margin-top: 25px;
+  border: none;
+  color: white;
+  margin-bottom: 60px;
+}
+.view-btn-box{
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vh;
+}
+.view-btn{
+  border-radius: 27.5px;
+  background-color: $btn-color;
+  height: 55px;
+  width: 230px;
+  border: none;
+  color: white;
+  -webkit-border-radius: 27.5px;
+  -moz-border-radius: 27.5px;
+  -ms-border-radius: 27.5px;
+  -o-border-radius: 27.5px;
+  margin-top: 60px;
+  
+}
+.carousel-content{
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: cornsilk;
+}
+.gallery-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.gallery-paragraph{
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  color: $paragraph-font-color;
+}
+.carousel.-box{
+  width: auto;
+  
+}
+.testimonial-image{
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  padding: 0 100px;
+}
+.view-more-photos{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.view-more-photos-link{
+  color: $btn-color;
+  text-decoration: none;
+  
+}
+.testimonial-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+}
+.kkkk{
+  display: flex;
+  flex-direction: row;
+}
+.bbb{
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+.testimonial-image-carousel{
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  width: 100px;
+  height: 100px;
+}
