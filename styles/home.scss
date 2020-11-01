@@ -1,12 +1,13 @@
 // variables //
 
 $title-color: white;
-$title-font-size: 90px;
+$title-font-size: 80px;
 $mini-title-font-size: 70px;
 $title-font-family: 'Times New Roman';  
 $paragraph-font-color: rgb(128, 126, 126);
 $paragraph-font-color-2:  rgb(85, 85, 85);
-$btn-color: rgb(238, 125, 59);
+$btn-color: rgb(255, 115, 34);
+
 
 
 body {
@@ -17,16 +18,10 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  background-color: rgb(238, 236, 236); 
+  background-color: rgb(221, 218, 218); 
 }
-.list{
-  list-style: none;
-} 
-.item-link{
-  text-decoration: none;
-}    
 .home-header {
-  background-image: url(../assets/image/background-image1.jpg);
+  background-image: url(../assets/image/hotel_files/027eb7103690037.5f524f9883c3f.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -43,7 +38,7 @@ body {
 }      
 .home-btn{
   margin-left: 650px;
-  margin-top: 210px;
+  margin-top: 170px;
   
 }
 .home-scroll-btn{
@@ -67,7 +62,7 @@ body {
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }   
 .booking-form{
@@ -130,10 +125,13 @@ body {
   color: white;
   margin-bottom: 60px;
 }
+.booking-btn:hover{
+  opacity: 0.65;
+}
 .welcome-content{
   width: 100vw;
-  height: 100vh;
-  background-color: honeydew;
+  height: 110vh;
+  background-color: white;
   display: flex;
   flex-direction: row;
 } 
@@ -144,7 +142,7 @@ body {
 .welcome-to-casahotel{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-left: 60px;
   line-height: 4rem;
 }   
@@ -172,6 +170,9 @@ body {
   border: none;
   color: white;
 }  
+.welcome-btn:hover{
+  opacity: 0.65;
+}
 .or{
   margin-top: 40px;
   margin-left: 25px;
@@ -188,9 +189,8 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  
   margin-left: 130px;
-  margin-top: 30px;
+  margin-top: 70px;
 
 }
 
@@ -227,7 +227,6 @@ body {
 .offers{
   width: 100vw;
   height: fit-content;
-  background-color: rgb(217, 219, 217);
   display: flex;
   flex-direction: column;
 }
@@ -235,7 +234,7 @@ body {
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 .offer-paragraph{
@@ -252,7 +251,7 @@ body {
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  background-color: cornsilk;
+  background-color: white;
   
 }
 .offer-img-1{
@@ -310,6 +309,9 @@ body {
   color: white;
   margin-bottom: 60px;
 }
+.offer-booking-btn:hover{
+  opacity: 0.65;
+}
 .view-btn-box{
   margin-left: auto;
   margin-right: auto;
@@ -327,20 +329,22 @@ body {
   -ms-border-radius: 27.5px;
   -o-border-radius: 27.5px;
   margin-top: 60px;
-  
+}
+.view-btn:hover{
+  opacity: 0.65;
 }
 .carousel-content{
-  height: fit-content;
+  height: 190vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-color: cornsilk;
+  background-color: white;
 }
 .gallery-title{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 .gallery-paragraph{
@@ -371,15 +375,18 @@ body {
   color: $btn-color;
   text-decoration: none;
   
+  
 }
 .testimonial{
-  background-color: rgb(233, 218, 233);
+  background-color: white;
+  height: 160vh;
 }
 .testimonial-title{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
   text-align: center;
   margin-bottom: 80px;
+  margin-top: 100px;
 }
 .testimonial-comments{
   display: flex;
@@ -424,7 +431,7 @@ body {
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 .event-paragraph{
@@ -472,7 +479,7 @@ body {
   font-weight: 540;
 }
 .reserve-content{
-  background-color: rgb(199, 195, 195);
+  background-color: white;
   height: fit-content;
   width: 100vw;
   display: flex;
@@ -493,25 +500,32 @@ body {
   border: none;
   color: white;
   margin-top: 120px;
-  margin-left: 440px;
+  margin-left: 580px;
+}
+.reserve-btn:hover{
+  opacity: 0.65;
 }
 .footer{
   background-color: rgb(34, 36, 34);
   height: fit-content;
   width: 100vw;
+  
 }
 .footer-content{
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
   margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 60px;
 }
 .footer-ul-1{
-  line-height: 3rem;
+  line-height: 2.5rem;
+  margin-right: 140px;
+  
 }
 .footer-ul-2{
-  line-height: 3rem;
-  margin-left: 140px;
+  line-height: 2.5rem;
+  margin-right: 140px;
 }
 .footer-li{
   list-style: none;
@@ -523,8 +537,10 @@ body {
 .footer-contact{
   display: flex;
   flex-direction: column;
-  margin-left: 140px;
-  line-height: 2.1rem;
+  line-height: 2.5rem;
+  margin-right: 50px;
+  width: 300px;
+  
 }
 .contact-name{
   color: white;
@@ -542,9 +558,7 @@ body {
   color: rgb(126, 125, 124);
   margin-bottom: 40px;
 }
-.footer-input{
-  margin-left: 100px;
-}
+
 input{
   border-top: none;
   border-left: none;
@@ -553,11 +567,69 @@ input{
   width: 270px;
   background-color: rgb(34, 36, 34);
   color: white;
-  height: 60px;
+  height: 30px;
 }
 ::-webkit-input-placeholder{
   color: rgb(87, 85, 83);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-bottom: 17px;
   padding-left: 5px;
+}
+
+.horyzontal-line{
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color:  rgb(87, 85, 83);
+  margin-top: 110px;
+}
+.footer-sentance{
+  color: white;
+  margin-left: 100px;
+  color: rgb(116, 112, 112);
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+.colorlib{
+  color: rgb(160, 158, 156);
+}
+.navbar-list{
+  text-align: center;
+  height: 91vh;
+  background-color: white;
+}
+.list{
+  list-style: none;
+} 
+.item-link{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: $title-font-family;
+  font-weight: 500;
+  line-height: 4rem;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  
+}    
+.item-link:hover{
+  background-color: $btn-color;
+  transition-duration: 1.3s;
+  text-decoration: none;
+  color: black;
+  border: none;
+ 
+}
+.list-item{
+  margin-top: 90px;
+}
+.footer-icon{
+  width: 20px;
+  margin-right: 20px;
+}
+.footer-icon-box{
+  margin-left: 480px;
 }
