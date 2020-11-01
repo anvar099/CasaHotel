@@ -21,7 +21,7 @@ body {
   background-color: rgb(221, 218, 218); 
 }
 .home-header {
-  background-image: url(../assets/image/hotel_files/027eb7103690037.5f524f9883c3f.jpg);
+  background-image: url(../assets/image/offer-img.jpeg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -124,9 +124,14 @@ body {
   border: none;
   color: white;
   margin-bottom: 60px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .booking-btn:hover{
-  opacity: 0.65;
+  opacity: 0.5;
 }
 .welcome-content{
   width: 100vw;
@@ -169,9 +174,14 @@ body {
   margin-top: 25px;
   border: none;
   color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }  
 .welcome-btn:hover{
-  opacity: 0.65;
+  opacity: 0.5;
 }
 .or{
   margin-top: 40px;
@@ -308,9 +318,14 @@ body {
   border: none;
   color: white;
   margin-bottom: 60px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .offer-booking-btn:hover{
-  opacity: 0.65;
+  opacity: 0.5;
 }
 .view-btn-box{
   margin-left: auto;
@@ -329,9 +344,14 @@ body {
   -ms-border-radius: 27.5px;
   -o-border-radius: 27.5px;
   margin-top: 60px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .view-btn:hover{
-  opacity: 0.65;
+  opacity: 0.5;
 }
 .carousel-content{
   height: 190vh;
@@ -355,10 +375,6 @@ body {
   text-align: center;
   color: $paragraph-font-color;
 }
-.carousel.-box{
-  width: auto;
-  
-}
 .testimonial-image{
   width: auto;
   height: 100vh;
@@ -378,7 +394,7 @@ body {
   
 }
 .testimonial{
-  background-color: white;
+  background-color: rgb(199, 149, 149);
   height: 160vh;
 }
 .testimonial-title{
@@ -412,6 +428,7 @@ body {
   -o-border-radius: 100px;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 .testimonial-paragraph{
   line-height: 1.8rem;
@@ -501,9 +518,14 @@ body {
   color: white;
   margin-top: 120px;
   margin-left: 580px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .reserve-btn:hover{
-  opacity: 0.65;
+  opacity: 0.5;
 }
 .footer{
   background-color: rgb(34, 36, 34);

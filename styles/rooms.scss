@@ -1,0 +1,357 @@
+$title-color: white;
+$title-font-size: 80px;
+$mini-title-font-size: 70px;
+$title-font-family: 'Times New Roman';  
+$paragraph-font-color: rgb(128, 126, 126);
+$paragraph-font-color-2:  rgb(85, 85, 85);
+$btn-color: rgb(255, 115, 34);
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(221, 218, 218); 
+}
+.home-header {
+  background-image: url(../assets/image/offer-img.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}   
+.home-title{
+  color: $title-color;
+  font-size: $title-font-size;
+  font-family: 'Times New Roman';
+  text-align: center;
+  margin-top: 20vh;
+  font-weight: bolder;
+}      
+.home-btn{
+  margin-left: 650px;
+  margin-top: 300px;
+  
+}
+.home-scroll-btn{
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 50px;
+  width: 30px;
+  background-color: transparent;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+} 
+.point{
+  padding-top: 3px;
+  color: white;
+  height: 80px;
+  font-weight: bold;
+}  
+.form-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+} 
+.offer{
+  margin-top: 100px;
+}  
+.offer-main{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  
+}
+.offer-img-1{
+  width: 45vw;
+  height: 630px;
+  object-fit: cover;
+
+}
+.offer-image{
+  height: fit-content;
+}
+.offer-price{
+  width: 37vw;
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+.price-time{
+  display: flex;
+  flex-direction: row;
+}
+.price{
+  color: $btn-color;
+  font-size: 50px;
+  margin-top: 60px;
+}
+.time{
+  margin-left: 5px;
+  margin-top: 100px;
+  color: $paragraph-font-color;
+}
+.price-title{
+  font-family: $title-font-family;
+  font-size: 35px;
+}
+.price-paragraph{
+  color: $paragraph-font-color-2;
+  line-height: 2rem;
+  font-size: 16px;
+
+}
+.price-paragraph-2{
+  color: $paragraph-font-color;
+  line-height: 1.7rem;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.offer-booking-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 160px;
+  margin-top: 25px;
+  border: none;
+  color: white;
+  margin-bottom: 60px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.offer-booking-btn:hover{
+  opacity: 0.5;
+}
+.carousel-content{
+  height: 190vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.gallery-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.gallery-paragraph{
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  text-align: center;
+  color: $paragraph-font-color;
+}
+.testimonial-image{
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  overflow-x: hidden;
+  padding: 0 100px;
+}
+.view-more-photos{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.view-more-photos-link{
+  color: $btn-color;
+  text-decoration: none;
+  
+  
+}
+.testimonial{
+  background-color: rgb(199, 149, 149);
+  height: 160vh;
+}
+.testimonial-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+.testimonial-comments{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  
+}
+.testimonial-img-p{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 100px;
+  
+  
+}
+.testimonial-image-carousel{
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.testimonial-paragraph{
+  line-height: 1.8rem;
+  color: black;
+}
+.testimonial-nick{
+  color: $paragraph-font-color-2;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
+.carousel-control-prev, .carousel-control-next{
+  margin-left: -50px;
+  margin-right: -50px;
+}
+.reserve-content{
+  background-color: white;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.reserve-paragraph{
+  font-family: Gill Sans;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.reserve-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 180px;
+  border: none;
+  color: white;
+  margin-top: 120px;
+  margin-left: 580px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.reserve-btn:hover{
+  opacity: 0.5;
+}
+.footer{
+  background-color: rgb(34, 36, 34);
+  height: fit-content;
+  width: 100vw;
+  
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 60px;
+}
+.footer-ul-1{
+  line-height: 2.5rem;
+  margin-right: 140px;
+  
+}
+.footer-ul-2{
+  line-height: 2.5rem;
+  margin-right: 140px;
+}
+.footer-li{
+  list-style: none;
+}
+.footer-link{
+  text-decoration: none;
+  color: rgb(179, 185, 179);
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  margin-right: 50px;
+  width: 300px;
+  
+}
+.contact-name{
+  color: white;
+}
+.address{
+  width: 18px;
+  margin-right: 12px;
+  color: rgb(126, 125, 123);
+  
+}
+.link{
+  color: rgb(102, 101, 99);
+}
+.footer-paragraph{
+  color: rgb(126, 125, 124);
+  margin-bottom: 40px;
+}
+
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  width: 270px;
+  background-color: rgb(34, 36, 34);
+  color: white;
+  height: 30px;
+}
+::-webkit-input-placeholder{
+  color: rgb(87, 85, 83);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 17px;
+  padding-left: 5px;
+}
+
+.horyzontal-line{
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color:  rgb(87, 85, 83);
+  margin-top: 110px;
+}
+.footer-sentance{
+  color: white;
+  margin-left: 100px;
+  color: rgb(116, 112, 112);
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+.colorlib{
+  color: rgb(160, 158, 156);
+}
+.footer-icon{
+  width: 20px;
+  margin-right: 20px;
+}
+.footer-icon-box{
+  margin-left: 480px;
+}
