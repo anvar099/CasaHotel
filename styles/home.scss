@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   background-color: rgb(221, 218, 218); 
 }
+/*************************************************HOME HEADER**************************************************/
 .home-header {
   background-image: url(../assets/image/offer-img.jpeg);
   width: 100vw;
@@ -27,6 +28,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  background-position: center;
 }   
 .home-title{
   color: $title-color;
@@ -35,7 +37,9 @@ body {
   text-align: center;
   margin-top: 20vh;
   font-weight: bolder;
-}      
+}     
+/*************************************************HOME BTN**************************************************/
+/*
 .home-btn{
   margin-left: 650px;
   margin-top: 170px;
@@ -58,6 +62,43 @@ body {
   height: 80px;
   font-weight: bold;
 }  
+*/
+/*************************************************NAVIGATION**************************************************/
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: $title-font-family;
+  font-weight: 500;
+ 
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 30px;
+}
+.nav-link:hover{
+  background-color: $btn-color;
+  transition-duration: 1.3s;
+  text-decoration: none;
+  color: black;
+  border: none;
+}   
+
+.nav-item{
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.nav-item:hover{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/*************************************************BOOKING FORM**************************************************/
 .form-title{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
@@ -133,6 +174,10 @@ body {
 .booking-btn:hover{
   opacity: 0.5;
 }
+.booking-btn:focus{
+  outline: none;
+}
+/*************************************************WELCOME**************************************************/
 .welcome-content{
   width: 100vw;
   height: 110vh;
@@ -234,6 +279,7 @@ body {
   margin-top: 280px;
 
 }
+/*************************************************OFFERS**************************************************/
 .offers{
   width: 100vw;
   height: fit-content;
@@ -353,6 +399,7 @@ body {
 .view-btn:hover{
   opacity: 0.5;
 }
+/*************************************************GALLERY**************************************************/
 .carousel-content{
   height: 190vh;
   width: 100vw;
@@ -393,6 +440,7 @@ body {
   
   
 }
+/*************************************************TESTIMONIAL**************************************************/
 .testimonial{
   background-color: rgb(199, 149, 149);
   height: 160vh;
@@ -444,6 +492,7 @@ body {
   margin-left: -50px;
   margin-right: -50px;
 }
+/*************************************************EVENT**************************************************/
 .event-title{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
@@ -495,6 +544,7 @@ body {
   font-size: 30px;
   font-weight: 540;
 }
+/*************************************************RESERVE**************************************************/
 .reserve-content{
   background-color: white;
   height: fit-content;
@@ -527,11 +577,11 @@ body {
 .reserve-btn:hover{
   opacity: 0.5;
 }
+/*************************************************FOOTER**************************************************/
 .footer{
   background-color: rgb(34, 36, 34);
   height: fit-content;
   width: 100vw;
-  
 }
 .footer-content{
   display: flex;
@@ -543,7 +593,6 @@ body {
 .footer-ul-1{
   line-height: 2.5rem;
   margin-right: 140px;
-  
 }
 .footer-ul-2{
   line-height: 2.5rem;
@@ -562,7 +611,6 @@ body {
   line-height: 2.5rem;
   margin-right: 50px;
   width: 300px;
-  
 }
 .contact-name{
   color: white;
@@ -571,7 +619,6 @@ body {
   width: 18px;
   margin-right: 12px;
   color: rgb(126, 125, 123);
-  
 }
 .link{
   color: rgb(102, 101, 99);
@@ -580,7 +627,6 @@ body {
   color: rgb(126, 125, 124);
   margin-bottom: 40px;
 }
-
 input{
   border-top: none;
   border-left: none;
@@ -597,7 +643,6 @@ input{
   margin-bottom: 17px;
   padding-left: 5px;
 }
-
 .horyzontal-line{
   margin-left: 60px;
   margin-right: 60px;
@@ -613,40 +658,6 @@ input{
 }
 .colorlib{
   color: rgb(160, 158, 156);
-}
-.navbar-list{
-  text-align: center;
-  height: 91vh;
-  background-color: white;
-}
-.list{
-  list-style: none;
-} 
-.item-link{
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-  font-family: $title-font-family;
-  font-weight: 500;
-  line-height: 4rem;
-  padding: 10px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  
-}    
-.item-link:hover{
-  background-color: $btn-color;
-  transition-duration: 1.3s;
-  text-decoration: none;
-  color: black;
-  border: none;
- 
-}
-.list-item{
-  margin-top: 90px;
 }
 .footer-icon{
   width: 20px;

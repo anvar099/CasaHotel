@@ -56,12 +56,14 @@ body {
 }  
 */
 /*************************************************NAVIGATION**************************************************/
-.nav-link {
+/*
+.nav-link{
   text-decoration: none;
   color: black;
   font-size: 25px;
-  font-family: "Times New Roman";
+  font-family: $title-font-family;
   font-weight: 500;
+  line-height: 4rem;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -69,25 +71,25 @@ body {
   -o-border-radius: 25px;
   padding: 30px;
 }
-
-.nav-link:hover {
-  background-color: #ff7322;
+.nav-link:hover{
+  background-color: $btn-color;
   transition-duration: 1.3s;
   text-decoration: none;
   color: black;
   border: none;
-}
+}   
 
-.nav-item {
+.nav-item{
+  width: fit-content;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
-}
 
-.nav-item:hover {
+}
+.nav-item:hover{
   padding-right: 30px;
   padding-left: 30px;
-}
-
+}*/
 /*************************************************BOOKING FORM**************************************************/
 .form-title {
   font-size: 70px;
@@ -170,10 +172,6 @@ body {
 
 .booking-btn:hover {
   opacity: 0.5;
-}
-
-.booking-btn:focus {
-  outline: none;
 }
 
 /*************************************************WELCOME**************************************************/
@@ -781,60 +779,6 @@ body {
   font-weight: bold;
 }  
 */
-.booking-form {
-  background-color: white;
-  height: 150px;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 100px;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
-}
-
-.booking-form-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.booking-label {
-  margin-top: 30px;
-  margin-left: 30px;
-  color: black;
-  font-weight: 500;
-}
-
-.booking-input {
-  margin-left: 30px;
-  color: #817f7f;
-  border: 1px solid #cecbcb;
-  border-radius: 5px;
-  background-color: white;
-  outline: none;
-  height: 50px;
-  width: 250px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.booking-input-number {
-  margin-left: 30px;
-  color: #817f7f;
-  border: 1px solid #cecbcb;
-  border-radius: 5px;
-  background-color: white;
-  outline: none;
-  height: 50px;
-  width: 140px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
 .reservation-booking-form {
   width: 100vw;
   height: fit-content;
@@ -1452,4 +1396,4 @@ input {
   margin-left: 480px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */
