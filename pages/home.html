@@ -6,54 +6,66 @@
     <title>CasaHotel</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="main-container">
-        <!-----------NAVBAR----START------>
-        <div class="navbar-main-list">
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="bg-light p-4 navbar-list">
-               <ul class="list-item">
-                   <li class="list"><a class="item-link" href="#">Home</a></li>
-                   <li class="list"><a class="item-link" href="#">Room</a></li>
-                   <li class="list"><a class="item-link" href="#">Reservation</a></li>
-                   <li class="list"><a class="item-link" href="#">Events</a></li>
-                   <li class="list"><a class="item-link" href="#">Contact</a></li>
-                   <li class="list"><a class="item-link" href="#">About</a></li>
-               </ul>
-              </div>
-            </div>
-            <nav class="navbar bg-light navbar-transparent">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </nav>
-          </div>
-          <!-----------NAVBAR----END------>
-        
-          <!--HEADER-START-->
+    <!-----------NAVBAR----START------>
+    <nav class="navbar bg-transparent navbar-custom fixed-top">
+        <div class="nav-brand">
+        <em><a class="navbar-bran" href="#">Casahotel</a></em>
+        </div>
+        <button class="navbar-toggler navbar-icon" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-menu" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservation Form</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+       <!-----------NAVBAR----END------>
+    <div class="main-container-home">
+        <!-------------HEADER-----START------------------>
         <div class="home-header">
             <div class="home-title">
                 Enjoy A Luxury <br> Experience
             </div>
+            <!--
             <div class="home-btn">
                 <button class="home-scroll-btn">
                     <div class="point">'</div>
                 </button>
             </div>
+            -->
         </div>
-        <!--HEADER-END-->
+        <!-------------------HEADER-------------END--------------->
         
-        <!--BOOKING_FORM_START-->
+        <!---------BOOKING----------FORM--------START------------->
         <div class="home-booking-form">
             <div class="primary-heading">
                 <div class="form-title">
                     Check Availabilty
                 </div>
                 <form action="#" class="booking-form">
-                    
                     <div class="booking-form-box">
                         <label class="booking-label" for="">Check In</label>
                         <input class="booking-input" type="date" name="checkin">
@@ -87,9 +99,9 @@
                 
             </div>
         </div>
-        <!--BOOKING_FORM_END-->
+        <!-------------BOOKING----------FORM--------END------------->
         
-        <!----->
+        <!------------WELCOME------------START------------->
         <div class="welcome-content">
             <div class="welcome-box">
                 <div class="welcome-to-casahotel">
@@ -101,7 +113,6 @@
                 <div class="welcome-paragraph-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quasi beatae corrupti doloribus minus facilis ex facere, voluptatum in placeat aperiam nobis error quos perferendis sunt.
                 </div>
-            
                 <div class="btn-box"> 
                     <button class="welcome-btn">
                         Read More
@@ -116,18 +127,13 @@
             </div>
             <div class="image-wrapper">
                 <div class="image-circle">
-                    <img class="welcome-img-1" src="../assets/image/hotel-food.jpg" alt="...">
-                </div>
-                <div class="image-square">   
-                    <img class="welcome-img-2" src="../assets/image/main-hotel.jpg" alt="...">
-                </div> 
-                <div class="image-circle-2">    
-                    <img class="welcome-img-3" src="../assets/image/girl.jpg" alt="...">
+                    <img class="welcome-img-1" src="../assets/image/about_feature_image.png" alt="...">
                 </div>
             </div>
         </div>
-
-        <!-------Offers-------->
+        <!-----------WELCOME---------END------->
+        
+        <!-------OFFER------------START--------->
         <div class="offers">
             <div class="offer-subtitle">
                 <div class="offer-title">
@@ -139,7 +145,7 @@
             </div>
             <div class="offer-main">
                 <div class="offer-image">
-                    <img class="offer-img-1" src="../assets/image/offer-img.jpeg" alt="...">
+                    <img class="offer-img-1" src="../assets/image/img_1.jpg" alt="...">
                 </div>
                 <div class="offer-price">
                     <div class="price-time">
@@ -188,7 +194,7 @@
                     </button>
                 </div>
                 <div class="offer-image">
-                    <img class="offer-img-1" src="../assets/image/offer2.jpg" alt="...">
+                    <img class="offer-img-1" src="../assets/image/img_2.jpg" alt="...">
                 </div>
             </div>
             <div class="view-btn-box">
@@ -197,9 +203,9 @@
                 </button>
             </div>
         </div>
-
+        <!-----------OFFER--------END---------->
         
-
+        <!-------GALLERY---------START------->
         <div class="carousel-content">
             <div class="gallery">
                 <div class="gallery-title">
@@ -210,29 +216,43 @@
                 </div>
                 <!------CARUSEL----START----->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <ol class="carousel-indicators car-indicators-box">
+                      <li class="car-indicators" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li class="car-indicators" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li class="car-indicators" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li class="car-indicators" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li class="car-indicators" data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner carousel-box">
                       <div class="carousel-item active">
-                        <img src="../assets/image/background-image1.jpg" class="d-block w-100 testimonial-image" alt="...">
+                        <img src="../assets/image/slider-1.jpg" class="d-block w-100 testimonial-image" alt="...">
                       </div>
                       <div class="carousel-item carousel-box">
-                        <img src="../assets/image/background-image.jpg" class="d-block w-100 testimonial-image" alt="...">
+                        <img src="../assets/image/slider-2.jpg" class="d-block w-100 testimonial-image" alt="...">
+                      </div>
+                        <div class="carousel-item carousel-box">
+                        <img src="../assets/image/slider-3.jpg" class="d-block w-100 testimonial-image" alt="...">
                       </div>
                       <div class="carousel-item carousel-box">
-                        <img src="../assets/image/hotel-food.jpg" class="d-block w-100 testimonial-image" alt="...">
+                        <img src="../assets/image/slider-4.jpg" class="d-block w-100 testimonial-image" alt="...">
+                      </div>
+                      <div class="carousel-item carousel-box">
+                        <img src="../assets/image/slider-5.jpg" class="d-block w-100 testimonial-image" alt="...">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
+                      <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="greyColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                      </svg>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
+                      <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="greyColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
                     </a>
                   </div>
                   <!------CARUSEL----END----->
@@ -242,50 +262,34 @@
                 <a class="view-more-photos-link" href="#">Viev More Photos</a> 
             </div>
         </div>
-        <div class="testimonial">
+        <!-------GALLERY------END---------->
+        
+        <!---------TESTIMONIAL----------START------->
+        <div class="testimonial-home">
             <div class="testimonial-title">
                 Testimonial
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators car-indicators-box">
+                    <li class="car-indicators" data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li class="car-indicators" data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li class="car-indicators" data-target="#carouselIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner carousel-box">
                     <div class="carousel-item active">
                         <div class="testimonial-comments">
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl-1.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <img src="../assets/image/person_1.jpg" class="d-block testimonial-image-carousel" alt="...">
                                 <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl-1.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <img src="../assets/image/person_2.jpg" class="d-block testimonial-image-carousel" alt="...">
                                 <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos eligendi quia sit culpa ut ullam harum temporibus, exercitationem delectus deserunt vitae ipsum earum possimus? Ut voluptatem doloremque quis ex fugiat cupiditate ratione laboriosam nulla dolorum odit odio blanditiis, ipsa deleniti enim labore? Corporis sit vitae laborum reprehenderit quod repellendus ea minima, dolores qui alias quam a! Laborum, officia! Ad adipisci iusto tenetur excepturi quidem.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl-1.jpg" class="d-block testimonial-image-carousel" alt="...">
-                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
-                                <p class="testimonial-nick"><em>― John Doe</em></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item active">
-                        <div class="testimonial-comments">
-                            <div class="testimonial-img-p">
-                                <img src="../assets/image/offer-img.jpeg" class="d-block testimonial-image-carousel" alt="...">
-                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
-                                <p class="testimonial-nick"><em>― John Doe</em></p>
-                            </div>
-                            <div class="testimonial-img-p">
-                                <img src="../assets/image/offer-img.jpeg" class="d-block testimonial-image-carousel" alt="...">
-                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos eligendi quia sit culpa ut ullam harum temporibus, exercitationem delectus deserunt vitae ipsum earum possimus? Ut voluptatem doloremque quis ex fugiat cupiditate ratione laboriosam nulla dolorum odit odio blanditiis, ipsa deleniti enim labore? Corporis sit vitae laborum reprehenderit quod repellendus ea minima, dolores qui alias quam a! Laborum, officia! Ad adipisci iusto tenetur excepturi quidem.</i></p>
-                                <p class="testimonial-nick"><em>― John Doe</em></p>
-                            </div>
-                            <div class="testimonial-img-p">
-                                <img src="../assets/image/offer-img.jpeg" class="d-block testimonial-image-carousel" alt="...">
+                                <img src="../assets/image/slider-3.jpg" class="d-block testimonial-image-carousel" alt="...">
                                 <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
@@ -294,33 +298,61 @@
                     <div class="carousel-item">
                         <div class="testimonial-comments">
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <img src="../assets/image/slider-4.jpg" class="d-block testimonial-image-carousel" alt="...">
                                 <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl.jpg" class="d-block testimonial-image-carousel" alt="...">
-                                <p class="testimonial-paragraph"><i>ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem praesentium architecto commodi, suscipit nobis eius eveniet? Rem officia distinctio maiores. Rem odio cumque harum eveniet reiciendis consequuntur beatae culpa. Amet consequatur nobis consectetur ullam delectus, id ut accusamus magni eum repudiandae veniam animi inventore perspiciatis eligendi. Tempore unde nostrum blanditiis ipsam placeat, nobis magnam facere sunt dolor voluptatum, consequatur totam ipsa, et corporis eaque.</i></p>
+                                <img src="../assets/image/slider-5.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos eligendi quia sit culpa ut ullam harum temporibus, exercitationem delectus deserunt vitae ipsum earum possimus? Ut voluptatem doloremque quis ex fugiat cupiditate ratione laboriosam nulla dolorum odit odio blanditiis, ipsa deleniti enim labore? Corporis sit vitae laborum reprehenderit quod repellendus ea minima, dolores qui alias quam a! Laborum, officia! Ad adipisci iusto tenetur excepturi quidem.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
                             <div class="testimonial-img-p">
-                                <img src="../assets/image/girl.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <img src="../assets/image/slider-6.jpg" class="d-block testimonial-image-carousel" alt="...">
                                 <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
                                 <p class="testimonial-nick"><em>― John Doe</em></p>
                             </div>
                         </div>
-                    </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-comments">
+                            <div class="testimonial-img-p">
+                                <img src="../assets/image/person_1.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
+                                <p class="testimonial-nick"><em>― John Doe</em></p>
+                            </div>
+                            <div class="testimonial-img-p">
+                                <img src="../assets/image/person_2.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos eligendi quia sit culpa ut ullam harum temporibus, exercitationem delectus deserunt vitae ipsum earum possimus? Ut voluptatem doloremque quis ex fugiat cupiditate ratione laboriosam nulla dolorum odit odio blanditiis, ipsa deleniti enim labore? Corporis sit vitae laborum reprehenderit quod repellendus ea minima, dolores qui alias quam a! Laborum, officia! Ad adipisci iusto tenetur excepturi quidem.</i></p>
+                                <p class="testimonial-nick"><em>― John Doe</em></p>
+                            </div>
+                            <div class="testimonial-img-p">
+                                <img src="../assets/image/slider-3.jpg" class="d-block testimonial-image-carousel" alt="...">
+                                <p class="testimonial-paragraph"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia consequatur dolorem sint corporis animi ab nostrum aspernatur suscipit, eligendi, perspiciatis unde corrupti doloribus tempora voluptates at et dolor minus. Suscipit ut doloribus tempore laborum? Saepe incidunt ducimus repudiandae aliquam ipsum velit corporis cum eos.</i></p>
+                                <p class="testimonial-nick"><em>― John Doe</em></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev testimonial-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
+                    <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="greyColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
+                    <svg width="50px" height="50px" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="greyColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
                 </a>
             </div>
         </div>
+        <!---------TESTIMONIAL---------END------------>
+        
+        <!------EVENT--------START------------>
         <div class="event">
             <div class="event-title">
                 Events
@@ -331,7 +363,7 @@
             <div class="event-content">
                 <div class="event-img-box">
                     <div class="event-img">
-                        <img class="image-events" src="../assets/image/girl.jpg" alt="...">
+                        <img class="image-events" src="../assets/image/image_5.jpg" alt="...">
                     </div>
                     <div class="event-date">
                         FEBRUARY 26, 2018
@@ -342,7 +374,7 @@
                 </div>
                 <div class="event-img-box">
                     <div class="event-img">
-                        <img class="image-events" src="../assets/image/girl.jpg" alt="...">
+                        <img class="image-events" src="../assets/image/image_6.jpg" alt="...">
                     </div>
                     <div class="event-date">
                         FEBRUARY 26, 2018
@@ -353,7 +385,7 @@
                 </div>
                 <div class="event-img-box">
                     <div class="event-img">
-                        <img class="image-events" src="../assets/image/girl.jpg" alt="...">
+                        <img class="image-events" src="../assets/image/image_7.jpg" alt="...">
                     </div>
                     <div class="event-date">
                         FEBRUARY 26, 2018
@@ -364,6 +396,9 @@
                 </div>
             </div>
         </div>
+        <!----------EVENT---------END------------->
+
+        <!-----------RESERVE------START------>
         <div class="reserve-content">
             <div class="reserve-paragraph">
                 Make Yourself Comfortable in Any of <br>Our Fully Air-conditioned Rooms
@@ -372,6 +407,9 @@
                 Reserve Now
             </button>
         </div>
+        <!---------RESERVE--------END------->
+
+        <!---------FOOTER---------START------------>
         <footer class="footer">
             <div class="footer-content">
                 <ul class="footer-ul-1">
@@ -389,25 +427,24 @@
                     <li class="footer-li"><a class="footer-link" href="#">Restaurant</a></li>
                 </ul>
                 <div class="footer-contact">
-                    <span><img class="address" src="../assets/icons/location.png" alt="..."><em class="contact-name">Address:</em></span>
+                    <span><i class="fas contacts fa-map-marker-alt"></i><em class="contact-name">Address:</em></span>
                     <div class="contact-label">
-                        <a class="link" href="#">
-                            98 West 21th Street, Suite 721 New <br> York NY 10016
-                        </a>
+                        <p class="link" href="#">
+                            Uzbekistan/Tashkent
+                        </p>
                     </div>
-                    <span><img class="address" src="../assets/icons/phone-call.svg" alt="..."><em class="contact-name">Phone:</em></span>
+                    <span><i class="fas contacts fa-phone"></i><em class="contact-name">Phone:</em></span>
                     <div class="contact-label">
-                        <a class="link" href="#">
-                            (+1)435 3533
-                        </a>
+                        <p class="link" href="#">
+                            +998943651200
+                        </p>
                     </div>
-                    <span><img class="address" src="../assets/icons/email.png" alt="..." width="25px"><em class="contact-name">Email:</em></span>
+                    <span><i class="fas contacts fa-envelope"></i><em class="contact-name">Email:</em></span>
                     <div class="contact-label">
-                        <a class="link" href="#">
-                           info@yourdomain.com
-                        </a>
+                        <p class="link" href="#">
+                           abduganievanvar99@gmail.com
+                        </p>
                     </div>
-
                 </div>
                 <div class="footer-input">
                     <div class="footer-paragraph">
@@ -415,7 +452,6 @@
                     </div>
                     <input type="email" placeholder="Your email...">
                 </div>
-                
             </div>
             <div class="the-end">
                 <hr class="horyzontal-line">
@@ -424,18 +460,18 @@
                     <img src="../assets/icons/heart.png" alt="..." width="12px"> 
                     by 
                     <span class="colorlib">
-                        Colorlib
+                        Anvar
                         <span class="footer-icon-box">
-                            <a href="#"><img class="footer-icon" src="../assets/icons/facebook.png" alt="..."></a>
-                            <a href="#"><img class="footer-icon" src="../assets/icons/instagram.png" alt="..."></a>
-                            <a href="#"><img class="footer-icon" src="../assets/icons/twitter.png" alt="..."></a>
+                            <a href="#"><i class="fab footer-icon fa-telegram-plane"></i></a>
+                            <a href="#"><i class="fab footer-icon fa-instagram"></i></a>
+                            <a href="#"><i class="fab footer-icon fa-facebook-f"></i></a>
                         </span>
                         
                     </span> 
                 </div>
             </div>
         </footer>
+        <!-----------FOOTER---------END------------>
     </div> 
-    
 </body>
 </html>

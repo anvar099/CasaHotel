@@ -8,21 +8,19 @@ $paragraph-font-color: rgb(128, 126, 126);
 $paragraph-font-color-2:  rgb(85, 85, 85);
 $btn-color: rgb(255, 115, 34);
 
-
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.main-container {
+.main-container-home {
   display: flex;
   flex-direction: column;
-  background-color: rgb(221, 218, 218); 
+  background-color: rgb(241, 237, 237); 
 }
 /*************************************************HOME HEADER**************************************************/
 .home-header {
-  background-image: url(../assets/image/offer-img.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../assets/image/hero_1.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -43,7 +41,6 @@ body {
 .home-btn{
   margin-left: 650px;
   margin-top: 170px;
-  
 }
 .home-scroll-btn{
   border: 2px solid white;
@@ -64,14 +61,41 @@ body {
 }  
 */
 /*************************************************NAVIGATION**************************************************/
-
+.navbar-custom {
+  z-index: 1000;
+  background-color: white;
+}
+.navbar-bran{
+  font-size: 30px;
+  color: black;
+  font-family: italic;
+  font-weight: 1000;
+}
+.navbar-bran:hover{
+  text-decoration: none;
+  color: white;
+}
+.navbar-icon{
+  border: 2px solid red;
+  position: relative;
+}
+.navbar-icon:focus{
+  background-image: url(../assets/icons/k.png);
+  color: red;
+}
+.navbar-collapse {
+  background-color: white;
+  margin-top: -55px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 100vh;
+}
 .nav-link{
   text-decoration: none;
   color: black;
   font-size: 25px;
   font-family: $title-font-family;
   font-weight: 500;
- 
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -86,18 +110,14 @@ body {
   color: black;
   border: none;
 }   
-
 .nav-item{
-  
   margin-left: auto;
   margin-right: auto;
-  
 }
 .nav-item:hover{
   padding-right: 30px;
   padding-left: 30px;
 }
-
 /*************************************************BOOKING FORM**************************************************/
 .form-title{
   font-size: $mini-title-font-size;
@@ -173,6 +193,7 @@ body {
 }
 .booking-btn:hover{
   opacity: 0.5;
+  transition: 0.5s;
 }
 .booking-btn:focus{
   outline: none;
@@ -180,7 +201,7 @@ body {
 /*************************************************WELCOME**************************************************/
 .welcome-content{
   width: 100vw;
-  height: 110vh;
+  height: 120vh;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -199,12 +220,18 @@ body {
 .welcome-paragraph{
   margin-left: 60px;
   margin-top: 25px;
-  color: $paragraph-font-color-2
+  color: $paragraph-font-color-2;
+  font-size: 20px;
+  width: 400px;
+  line-height: 2.3rem;
 }   
 .welcome-paragraph-2{
   margin-left: 60px;
   margin-top: 25px;
   color: $paragraph-font-color;
+  line-height: 2rem;
+  font-size: 18px;
+  width: 400px;
 }  
 .btn-box{
   display: flex;
@@ -216,7 +243,7 @@ body {
   height: 50px;
   width: 160px;
   margin-left: 60px;
-  margin-top: 25px;
+  margin-top: 45px;
   border: none;
   color: white;
   transition: 1s;
@@ -227,57 +254,41 @@ body {
 }  
 .welcome-btn:hover{
   opacity: 0.5;
+  transition: 0.5s;
 }
 .or{
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 25px;
   color: $paragraph-font-color;
 }   
 .see-video{
   margin-left: 25px;
-  margin-top: 40px;
+  margin-top: 60px;
   color: $btn-color;
-  text-decoration: none;
+  
 }  
+.see-video:hover{
+  text-decoration: none;
+  color: rgb(224, 151, 102);
+  transition: 0.5s;
+}
 .image-wrapper {
-  width: fit-content;
-  height: fit-content;
+  width: 670px;
+  height: 500px;
   display: flex;
   flex-direction: row;
-  margin-left: 130px;
-  margin-top: 70px;
-
+  margin-top: 100px;
 }
-
 .welcome-img-1 {
-  width: 120px;
-  height: 120px;
-  border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;
-  -ms-border-radius: 120px;
-  -o-border-radius: 120px;
+  margin-top: 0px;
+  width: 100%;
+  height: 110%;
   object-fit: cover;
-  margin-top: 60px;
-  margin-right: 30px;
-}
-.welcome-img-2{
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-  margin-top: 50px;
-}
-.welcome-img-3{
-  width: 200px;
-  height: 200px;
-  border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px;
-  object-fit: cover;
-  margin-top: 280px;
-
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 /*************************************************OFFERS**************************************************/
 .offers{
@@ -308,20 +319,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  
 }
 .offer-img-1{
   width: 45vw;
   height: 630px;
   object-fit: cover;
-
 }
 .offer-image{
   height: fit-content;
 }
 .offer-price{
   width: 37vw;
- 
   margin-left: auto;
   margin-right: auto;
 }
@@ -347,7 +355,6 @@ body {
   color: $paragraph-font-color-2;
   line-height: 2rem;
   font-size: 16px;
-
 }
 .price-paragraph-2{
   color: $paragraph-font-color;
@@ -372,6 +379,7 @@ body {
 }
 .offer-booking-btn:hover{
   opacity: 0.5;
+  transition: 0.5s;
 }
 .view-btn-box{
   margin-left: auto;
@@ -398,6 +406,12 @@ body {
 }
 .view-btn:hover{
   opacity: 0.5;
+  transition: 0.5s;
+}
+.view-more-photos-link:hover{
+  text-decoration: none;
+  color: rgb(224, 151, 102);
+  transition: 0.5s;
 }
 /*************************************************GALLERY**************************************************/
 .carousel-content{
@@ -429,6 +443,13 @@ body {
   overflow-x: hidden;
   padding: 0 100px;
 }
+.car-indicators-box .car-indicators{
+  width: 13px;
+  height: 13px;
+  background-color: rgb(252, 57, 8);
+  border-radius: 25px;
+  border: none;
+}
 .view-more-photos{
   margin-left: auto;
   margin-right: auto;
@@ -437,12 +458,10 @@ body {
 .view-more-photos-link{
   color: $btn-color;
   text-decoration: none;
-  
-  
 }
 /*************************************************TESTIMONIAL**************************************************/
-.testimonial{
-  background-color: rgb(199, 149, 149);
+.testimonial-home{
+  background-color: white;
   height: 160vh;
 }
 .testimonial-title{
@@ -456,7 +475,6 @@ body {
   display: flex;
   flex-direction: row;
   width: 90vw;
-  
 }
 .testimonial-img-p{
   width: 450px;
@@ -465,8 +483,6 @@ body {
   text-align: center;
   align-items: center;
   margin-left: 100px;
-  
-  
 }
 .testimonial-image-carousel{
   border-radius: 100px;
@@ -486,7 +502,6 @@ body {
   color: $paragraph-font-color-2;
   margin-bottom: 40px;
   margin-top: 40px;
-
 }
 .carousel-control-prev, .carousel-control-next{
   margin-left: -50px;
@@ -522,14 +537,17 @@ body {
   flex-direction: column;
   background-color: white;
   width: 380px;
+  height: 450px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.228);
   margin-bottom: 170px;
+}
+.event-img-box:hover{
+  box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.228);
 }
 .image-events{
   width: 380px;
   height: 270px;
   object-fit: cover;
-  
 }
 .event-date{
   color: $paragraph-font-color-2;
@@ -543,6 +561,10 @@ body {
   font-family: Gill Sans;
   font-size: 30px;
   font-weight: 540;
+}
+.event-paragraph-box:hover{
+  color: $btn-color;
+  cursor: pointer;
 }
 /*************************************************RESERVE**************************************************/
 .reserve-content{
@@ -602,9 +624,10 @@ body {
   list-style: none;
 }
 .footer-link{
-  text-decoration: none;
+  
   color: rgb(179, 185, 179);
 }
+
 .footer-contact{
   display: flex;
   flex-direction: column;
@@ -615,13 +638,18 @@ body {
 .contact-name{
   color: white;
 }
-.address{
+.contacts{
   width: 18px;
   margin-right: 12px;
-  color: rgb(126, 125, 123);
+  color: $btn-color;
 }
 .link{
   color: rgb(102, 101, 99);
+}
+.footer-link:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
 .footer-paragraph{
   color: rgb(126, 125, 124);
@@ -659,9 +687,20 @@ input{
 .colorlib{
   color: rgb(160, 158, 156);
 }
+.colorlib:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
 .footer-icon{
   width: 20px;
   margin-right: 20px;
+  color: grey;
+}
+.footer-icon:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
 }
 .footer-icon-box{
   margin-left: 480px;

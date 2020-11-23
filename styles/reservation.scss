@@ -8,20 +8,19 @@ $paragraph-font-color: rgb(128, 126, 126);
 $paragraph-font-color-2:  rgb(85, 85, 85);
 $btn-color: rgb(255, 115, 34);
 
-
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.main-container {
+.main-container-reservation {
   display: flex;
   flex-direction: column;
-  background-color: rgb(221, 218, 218); 
+  background-color: rgb(241, 237, 237);  
 }
-.home-header {
-  background-image: url(../assets/image/offer-img.jpeg);
+/***************************************************** HEADER ******************************************************/
+.reservation-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../assets/image/slider-4.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -29,20 +28,18 @@ body {
   object-fit: cover;
   background-position: center;
 }   
-.home-title{
+.reservation-title{
   color: $title-color;
   font-size: $title-font-size;
   font-family: 'Times New Roman';
   text-align: center;
-  margin-top: 20vh;
   font-weight: bolder;
+  margin-top: 30vh;
 }     
-
 /*
 .home-btn{
   margin-left: 650px;
   margin-top: 170px;
-  
 }
 .home-scroll-btn{
   border: 2px solid white;
@@ -62,20 +59,87 @@ body {
   font-weight: bold;
 }  
 */
-
+/*************************************************NAVIGATION**************************************************/
+.navbar-custom {
+  z-index: 1000;
+  background-color: white;
+}
+.navbar-bran{
+  font-size: 30px;
+  color: black;
+  font-family: italic;
+  font-weight: 1000;
+}
+.navbar-bran:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.navbar-icon{
+  border: 2px solid red;
+  position: relative;
+}
+.navbar-icon:focus{
+  background-image: url(../assets/icons/k.png);
+  color: red;
+}
+.navbar-collapse {
+  background-color: white;
+  margin-top: -55px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 100vh;
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: $title-font-family;
+  font-weight: 500;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 30px;
+}
+.nav-link:hover{
+  background-color: $btn-color;
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  border: none;
+}   
+.nav-item{
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item:hover{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/***************************************************** BOOKING ******************************************************/
 .reservation-booking-form{
   width: 100vw;
   height: fit-content;
-  
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.form-content{
+  width: 45vw;
+  height: 960px;
+  border: 1px solid rgb(194, 191, 191);
+  margin: 120px;
 }
 .form-box-name{
   display: flex;
   flex-direction: column;
- 
 }
 .form-box{
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
 }
 .form-email{
   display: flex;
@@ -88,11 +152,133 @@ body {
 .label-check{
   display: block;
 }
-.form-box-checkin{
-  margin-left: 20px;
+.form-book-select{
+  display: flex;
+  flex-direction: row;
 }
-.testimonial{
-  background-color: rgb(199, 149, 149);
+.booking-label{
+  color: black;
+  font-weight: 500;
+}
+.reservation-input{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}   
+.reservation-email{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 535px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.reservation-input-check{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.reservation-form-box{
+  display: flex;
+  flex-direction: column;
+}
+.reservation-label{
+  margin-top: 30px;
+  margin-left: 35px;
+  color: black;
+  font-weight: 500;
+}     
+.reservation-input-number{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.reservation-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 200px;
+  margin-top: 60px;
+  margin-left: 35px;
+  border: none;
+  color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.reservation-btn:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.reservation-btn:focus{
+  outline: none;
+}
+.textarea{
+  width: 535px;
+  height: 220px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 35px;
+}
+.reservation-paragraph-content{
+  margin-top: 120px;
+}
+.reserve-name{
+  color: rgb(130, 134, 134);
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.reserve-address{
+  color: rgb(133, 138, 136);
+  font-size: 40px;
+  font-family: $title-font-family;
+  margin-bottom: 40px;
+}
+/*************************************************TESTIMONIAL**************************************************/
+.testimonial-home{
+  background-color: white;
   height: 160vh;
 }
 .testimonial-title{
@@ -106,7 +292,6 @@ body {
   display: flex;
   flex-direction: row;
   width: 90vw;
-  
 }
 .testimonial-img-p{
   width: 450px;
@@ -115,8 +300,6 @@ body {
   text-align: center;
   align-items: center;
   margin-left: 100px;
-  
-  
 }
 .testimonial-image-carousel{
   border-radius: 100px;
@@ -136,18 +319,22 @@ body {
   color: $paragraph-font-color-2;
   margin-bottom: 40px;
   margin-top: 40px;
-
 }
 .carousel-control-prev, .carousel-control-next{
   margin-left: -50px;
   margin-right: -50px;
 }
+/***************************************************** RESERVE ******************************************************/
 .reserve-content{
   background-color: white;
   height: fit-content;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  border: 1px solid rgb(196, 194, 194);
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 }
 .reserve-paragraph{
   font-family: Gill Sans;
@@ -174,11 +361,11 @@ body {
 .reserve-btn:hover{
   opacity: 0.5;
 }
+/***************************************************** FOOTER ******************************************************/
 .footer{
   background-color: rgb(34, 36, 34);
   height: fit-content;
   width: 100vw;
-  
 }
 .footer-content{
   display: flex;
@@ -190,7 +377,6 @@ body {
 .footer-ul-1{
   line-height: 2.5rem;
   margin-right: 140px;
-  
 }
 .footer-ul-2{
   line-height: 2.5rem;
@@ -200,7 +386,6 @@ body {
   list-style: none;
 }
 .footer-link{
-  text-decoration: none;
   color: rgb(179, 185, 179);
 }
 .footer-contact{
@@ -209,25 +394,27 @@ body {
   line-height: 2.5rem;
   margin-right: 50px;
   width: 300px;
-  
 }
 .contact-name{
   color: white;
 }
-.address{
+.contacts{
   width: 18px;
   margin-right: 12px;
-  color: rgb(126, 125, 123);
-  
+  color: $btn-color;
 }
 .link{
   color: rgb(102, 101, 99);
+}
+.footer-link:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
 .footer-paragraph{
   color: rgb(126, 125, 124);
   margin-bottom: 40px;
 }
-
 input{
   border-top: none;
   border-left: none;
@@ -244,7 +431,6 @@ input{
   margin-bottom: 17px;
   padding-left: 5px;
 }
-
 .horyzontal-line{
   margin-left: 60px;
   margin-right: 60px;
@@ -261,9 +447,20 @@ input{
 .colorlib{
   color: rgb(160, 158, 156);
 }
+.colorlib:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
 .footer-icon{
   width: 20px;
   margin-right: 20px;
+  color: grey;
+}
+.footer-icon:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
 }
 .footer-icon-box{
   margin-left: 480px;

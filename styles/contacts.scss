@@ -1,0 +1,422 @@
+// variables //
+
+$title-color: white;
+$title-font-size: 80px;
+$mini-title-font-size: 70px;
+$title-font-family: 'Times New Roman';  
+$paragraph-font-color: rgb(128, 126, 126);
+$paragraph-font-color-2:  rgb(85, 85, 85);
+$btn-color: rgb(255, 115, 34);
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.main-container-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(221, 218, 218); 
+}
+/*************************************************HOME HEADER**************************************************/
+.contact-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../assets/image/slider-2.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}   
+.contact-title{
+  color: $title-color;
+  font-size: $title-font-size;
+  font-family: 'Times New Roman';
+  text-align: center;
+  margin-top: 20vh;
+  font-weight: bolder;
+}     
+/*************************************************HOME BTN**************************************************/
+/*
+.home-btn{
+  margin-left: 650px;
+  margin-top: 170px;
+}
+.home-scroll-btn{
+  border: 2px solid white;
+  border-radius: 30px;
+  height: 50px;
+  width: 30px;
+  background-color: transparent;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+} 
+.point{
+  padding-top: 3px;
+  color: white;
+  height: 80px;
+  font-weight: bold;
+}  
+*/
+/*************************************************NAVIGATION**************************************************/
+.navbar-custom {
+  z-index: 1000;
+  background-color: white;
+}
+.navbar-bran{
+  font-size: 30px;
+  color: black;
+  font-family: italic;
+  font-weight: 1000;
+}
+.navbar-bran:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.navbar-icon{
+  border: 2px solid red;
+  position: relative;
+}
+.navbar-icon:focus{
+  background-image: url(../assets/icons/k.png);
+  color: red;
+}
+.navbar-collapse {
+  background-color: white;
+  margin-top: -55px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 100vh;
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: $title-font-family;
+  font-weight: 500;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 30px;
+}
+.nav-link:hover{
+  background-color: $btn-color;
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  border: none;
+}   
+.nav-item{
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item:hover{
+  padding-right: 30px;
+  padding-left: 30px;
+  transition: 0.5s;
+}
+/*************************************************BOOKING**************************************************/
+.reservation-booking-form{
+  width: 100vw;
+  height: fit-content;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.book-contact{
+  width: 45vw;
+  height: 730px;
+  border: 1px solid rgb(194, 191, 191);
+  margin: 120px;
+  
+}
+.form-box-name{
+  display: flex;
+  flex-direction: column;
+}
+.form-box{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.form-email{
+  display: flex;
+  flex-direction: column;
+}
+.reservation-input{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 250px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}   
+.reservation-email{
+  margin-left: 35px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  height: 50px;
+  width: 535px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.reservation-label{
+  margin-top: 30px;
+  margin-left: 35px;
+  color: black;
+  font-weight: 500;
+}     
+.reservation-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 200px;
+  margin-top: 60px;
+  margin-left: 35px;
+  border: none;
+  color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.reservation-btn:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.reservation-btn:focus{
+  outline: none;
+}
+.textarea{
+  width: 535px;
+  height: 220px;
+  color: rgb(129, 127, 127);
+  border: 1px solid rgb(206, 203, 203);
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-left: 35px;
+}
+.reservation-paragraph-content{
+  margin-top: 120px;
+}
+.reserve-name{
+  color: rgb(130, 134, 134);
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.reserve-address{
+  color: rgb(133, 138, 136);
+  font-size: 40px;
+  font-family: $title-font-family;
+  margin-bottom: 40px;
+}
+/*************************************************TESTIMONIAL**************************************************/
+.testimonial-contact{
+  background-color: white;
+  height: 160vh;
+}
+.testimonial-title{
+  font-size: $mini-title-font-size;
+  font-family: $title-font-family;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 100px;
+}
+.testimonial-comments{
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+.testimonial-img-p{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 100px;
+}
+.testimonial-image-carousel{
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.testimonial-paragraph{
+  line-height: 1.8rem;
+  color: black;
+}
+.testimonial-nick{
+  color: $paragraph-font-color-2;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.carousel-control-prev, .carousel-control-next{
+  margin-left: -50px;
+  margin-right: -50px;
+}
+/*************************************************RESERVE**************************************************/
+.reserve-content{
+  background-color: white;
+  height: fit-content;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.reserve-paragraph{
+  font-family: Gill Sans;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.reserve-btn{
+  border-radius: 25px;
+  background-color: $btn-color;
+  height: 50px;
+  width: 180px;
+  border: none;
+  color: white;
+  margin-top: 120px;
+  margin-left: 580px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.reserve-btn:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+/*************************************************FOOTER**************************************************/
+.footer{
+  background-color: rgb(34, 36, 34);
+  height: fit-content;
+  width: 100vw;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 60px;
+}
+.footer-ul-1{
+  line-height: 2.5rem;
+  margin-right: 140px;
+}
+.footer-ul-2{
+  line-height: 2.5rem;
+  margin-right: 140px;
+}
+.footer-li{
+  list-style: none;
+}
+.footer-link{
+  
+  color: rgb(179, 185, 179);
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  margin-right: 50px;
+  width: 300px;
+}
+.contact-name{
+  color: white;
+}
+.contacts-con{
+  width: 18px;
+  margin-right: 12px;
+  color: $btn-color;
+}
+.link{
+  color: rgb(102, 101, 99);
+}
+.footer-link:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.footer-paragraph{
+  color: rgb(126, 125, 124);
+  margin-bottom: 40px;
+}
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  width: 270px;
+  background-color: rgb(34, 36, 34);
+  color: white;
+  height: 30px;
+}
+::-webkit-input-placeholder{
+  color: rgb(87, 85, 83);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 17px;
+  padding-left: 5px;
+}
+.horyzontal-line{
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color:  rgb(87, 85, 83);
+  margin-top: 110px;
+}
+.footer-sentance{
+  color: white;
+  margin-left: 100px;
+  color: rgb(116, 112, 112);
+  margin-top: 60px;
+  margin-bottom: 110px;
+}
+.colorlib{
+  color: rgb(160, 158, 156);
+}
+.colorlib:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+.footer-icon{
+  width: 20px;
+  margin-right: 20px;
+  color: grey;
+}
+.footer-icon:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+.footer-icon-box{
+  margin-left: 480px;
+}

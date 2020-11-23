@@ -6,27 +6,26 @@ $paragraph-font-color: rgb(128, 126, 126);
 $paragraph-font-color-2:  rgb(85, 85, 85);
 $btn-color: rgb(255, 115, 34);
 
-
-
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-.main-container {
+.main-container-room {
   display: flex;
   flex-direction: column;
   background-color: rgb(221, 218, 218); 
 }
-.home-header {
-  background-image: url(../assets/image/offer-img.jpeg);
+/************************************************ROOM HEADER**************************************************/
+.room-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../assets/image/slider-5.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
 }   
-.home-title{
+.room-title{
   color: $title-color;
   font-size: $title-font-size;
   font-family: 'Times New Roman';
@@ -34,11 +33,11 @@ body {
   margin-top: 20vh;
   font-weight: bolder;
 }  
+/*************************************************ROOM BTN**************************************************/
 /*    
 .home-btn{
   margin-left: 650px;
   margin-top: 300px;
-  
 }
 .home-scroll-btn{
   border: 2px solid white;
@@ -58,6 +57,67 @@ body {
   font-weight: bold;
 }  
 */
+/*************************************************NAVIGATION**************************************************/
+.navbar-custom {
+  z-index: 1000;
+  background-color: white;
+}
+.navbar-bran{
+  font-size: 30px;
+  color: black;
+  font-family: italic;
+  font-weight: 1000;
+}
+.navbar-bran:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+.navbar-icon{
+  border: 2px solid red;
+  position: relative;
+}
+.navbar-icon:focus{
+  background-image: url(../assets/icons/k.png);
+  color: red;
+}
+.navbar-collapse {
+  background-color: white;
+  margin-top: -55px;
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 100vh;
+}
+.nav-link{
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: $title-font-family;
+  font-weight: 500;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 30px;
+}
+.nav-link:hover{
+  background-color: $btn-color;
+  transition: 0.5s;
+  text-decoration: none;
+  color: black;
+  border: none;
+}   
+.nav-item{
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-item:hover{
+  padding-right: 30px;
+  padding-left: 30px;
+  transition: 0.5s;
+}
+/*************************************************OFFER**************************************************/
 .form-title{
   font-size: $mini-title-font-size;
   font-family: $title-font-family;
@@ -75,20 +135,26 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  
+}
+.offer-main-end{
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-bottom: 100px;
 }
 .offer-img-1{
   width: 45vw;
   height: 630px;
   object-fit: cover;
-
 }
 .offer-image{
   height: fit-content;
 }
 .offer-price{
   width: 37vw;
- 
   margin-left: auto;
   margin-right: auto;
 }
@@ -139,7 +205,9 @@ body {
 }
 .offer-booking-btn:hover{
   opacity: 0.5;
+  transition: 0.5s;
 }
+/*************************************************GALLERY**************************************************/
 .carousel-content{
   height: 190vh;
   width: 100vw;
@@ -177,11 +245,10 @@ body {
 .view-more-photos-link{
   color: $btn-color;
   text-decoration: none;
-  
-  
 }
-.testimonial{
-  background-color: rgb(199, 149, 149);
+/*************************************************TESTIMONIAL**************************************************/
+.testimonial-home{
+  background-color: white;
   height: 160vh;
 }
 .testimonial-title{
@@ -195,7 +262,6 @@ body {
   display: flex;
   flex-direction: row;
   width: 90vw;
-  
 }
 .testimonial-img-p{
   width: 450px;
@@ -204,8 +270,6 @@ body {
   text-align: center;
   align-items: center;
   margin-left: 100px;
-  
-  
 }
 .testimonial-image-carousel{
   border-radius: 100px;
@@ -225,18 +289,22 @@ body {
   color: $paragraph-font-color-2;
   margin-bottom: 40px;
   margin-top: 40px;
-
 }
 .carousel-control-prev, .carousel-control-next{
   margin-left: -50px;
   margin-right: -50px;
 }
+/*************************************************RESERVE**************************************************/
 .reserve-content{
   background-color: white;
   height: fit-content;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  border: 1px solid rgb(196, 194, 194);
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
 }
 .reserve-paragraph{
   font-family: Gill Sans;
@@ -263,11 +331,11 @@ body {
 .reserve-btn:hover{
   opacity: 0.5;
 }
+/*************************************************FOOTER**************************************************/
 .footer{
   background-color: rgb(34, 36, 34);
   height: fit-content;
   width: 100vw;
-  
 }
 .footer-content{
   display: flex;
@@ -279,7 +347,6 @@ body {
 .footer-ul-1{
   line-height: 2.5rem;
   margin-right: 140px;
-  
 }
 .footer-ul-2{
   line-height: 2.5rem;
@@ -289,7 +356,7 @@ body {
   list-style: none;
 }
 .footer-link{
-  text-decoration: none;
+  
   color: rgb(179, 185, 179);
 }
 .footer-contact{
@@ -298,25 +365,27 @@ body {
   line-height: 2.5rem;
   margin-right: 50px;
   width: 300px;
-  
 }
 .contact-name{
   color: white;
 }
-.address{
+.contacts{
   width: 18px;
   margin-right: 12px;
-  color: rgb(126, 125, 123);
-  
+  color: $btn-color;
 }
 .link{
   color: rgb(102, 101, 99);
+}
+.footer-link:hover{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
 }
 .footer-paragraph{
   color: rgb(126, 125, 124);
   margin-bottom: 40px;
 }
-
 input{
   border-top: none;
   border-left: none;
@@ -333,7 +402,6 @@ input{
   margin-bottom: 17px;
   padding-left: 5px;
 }
-
 .horyzontal-line{
   margin-left: 60px;
   margin-right: 60px;
@@ -350,9 +418,20 @@ input{
 .colorlib{
   color: rgb(160, 158, 156);
 }
+.colorlib:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
 .footer-icon{
   width: 20px;
   margin-right: 20px;
+  color: grey;
+}
+.footer-icon:hover{
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
 }
 .footer-icon-box{
   margin-left: 480px;
